@@ -50,29 +50,6 @@ export function Home() {
     }
   ]
 
-  /*   const values = [
-    {
-      title: 'Innovación',
-      description:
-        'Utilizamos las últimas tecnologías y tendencias para mantener a nuestros clientes a la vanguardia.'
-    },
-    {
-      title: 'Resultados',
-      description:
-        'Nos enfocamos en métricas reales y ROI medible para garantizar el crecimiento de tu negocio.'
-    },
-    {
-      title: 'Transparencia',
-      description:
-        'Comunicación clara y reportes detallados en cada etapa del proceso.'
-    },
-    {
-      title: 'Excelencia',
-      description:
-        'Buscamos la perfección en cada proyecto, sin importar su tamaño o complejidad.'
-    }
-  ] */
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -156,14 +133,14 @@ export function Home() {
                 boxShadow: '0 20px 40px rgba(56, 189, 248, 0.3)'
               }}
               whileTap={{ scale: 0.95 }}
-              className="bg-accent text-primary px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-accent text-primary px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Comenzar Ahora
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-accent text-accent px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent hover:text-primary transition-all duration-300"
+              className="border-2 border-accent text-accent px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-accent hover:text-primary transition-all duration-300"
             >
               Ver Servicios
             </motion.button>
@@ -199,7 +176,7 @@ export function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-accent/20 backdrop-blur-sm"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-primary mb-4">
@@ -249,22 +226,16 @@ export function Home() {
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
-                  className="relative w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl"
+                  className="relative w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-accent/20"
                 >
-                  {/* Placeholder para la foto - aquí puedes cambiar la imagen */}
-                  <div className="w-full h-full bg-gradient-to-br from-primary to-slate-600 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <div className="text-6xl mb-4">👨‍💼</div>
-                      <p className="text-lg font-medium">Tu Foto Aquí</p>
-                    </div>
-                  </div>
+                  <img
+                    src="/src/assets/DavidFundador.jpg"
+                    alt="David Nahuel Alvarez - Fundador de Escala Digital"
+                    className="w-full h-full object-cover object-center filter brightness-105 contrast-105"
+                  />
 
-                  {/* Puedes reemplazar el div anterior con una imagen real así: */}
-                  {/* <img 
-                    src="/path-to-your-photo.jpg" 
-                    alt="Foto profesional"
-                    className="w-full h-full object-cover"
-                  /> */}
+                  {/* Overlay gradient for better text contrast if needed */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent"></div>
                 </motion.div>
 
                 {/* Decorative elements */}
@@ -275,7 +246,7 @@ export function Home() {
                     repeat: Infinity,
                     ease: 'linear'
                   }}
-                  className="absolute -top-4 -right-4 w-12 h-12 bg-accent rounded-full opacity-20"
+                  className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-accent to-accent/60 rounded-2xl opacity-20 blur-sm"
                 ></motion.div>
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
@@ -284,7 +255,16 @@ export function Home() {
                     repeat: Infinity,
                     ease: 'easeInOut'
                   }}
-                  className="absolute -bottom-4 -left-4 w-8 h-8 bg-accent rounded-full opacity-30"
+                  className="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-br from-accent to-accent/80 rounded-xl opacity-30 blur-sm"
+                ></motion.div>
+                <motion.div
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: 'easeInOut'
+                  }}
+                  className="absolute top-1/2 -right-8 w-6 h-6 bg-accent rounded-full opacity-40"
                 ></motion.div>
               </div>
             </motion.div>
@@ -410,7 +390,7 @@ export function Home() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-primary text-white px-10 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Contacta con Nosotros
             </motion.button>
