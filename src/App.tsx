@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { Home } from './pages/Home.jsx'
-import { About } from './pages/About.jsx'
 import { Services } from './pages/Services.jsx'
 import { Contact } from './pages/Contact.jsx'
 import { Navbar } from './components/Navbar.js'
@@ -23,14 +22,6 @@ export default function App() {
             element={
               <PageWrapper>
                 <Home />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <PageWrapper>
-                <About />
               </PageWrapper>
             }
           />
