@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
-import { Home } from './pages/Home.jsx'
-import { Services } from './pages/Services.jsx'
-import { Contact } from './pages/Contact.jsx'
-import { Navbar } from './components/Navbar.js'
-import { Whatsappwidget } from './components/WhatsAppWidget.js'
+import { Home } from './pages/Home.tsx'
+import { Services } from './pages/Services.tsx'
+import { Contact } from './pages/Contact.tsx'
+import { Navbar } from './components/Navbar.tsx'
+import { Whatsappwidget } from './components/WhatsAppWidget.tsx'
 import './index.css'
 
 type PageWrapperProps = {
