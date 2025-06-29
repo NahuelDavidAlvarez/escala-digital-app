@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
-import { Home } from './pages/Home.tsx'
-import { Services } from './pages/Services.tsx'
-import { Contact } from './pages/Contact.tsx'
-import { Navbar } from './components/Navbar.tsx'
-import { Whatsappwidget } from './components/WhatsAppWidget.tsx'
+import { Home } from './pages/Home.js'
+import { Services } from './pages/Services.js'
+import { Contact } from './pages/Contact.js'
+import { Navbar } from './components/Navbar.js'
+import { WhatsAppWidget } from './components/WhatsAppWidget.js'
 import './index.css'
 
 type PageWrapperProps = {
@@ -45,7 +45,7 @@ export default function App() {
         </Routes>
 
         {/* Widget de WhatsApp - se muestra en todas las páginas */}
-        <Whatsappwidget size="xl" />
+        <WhatsAppWidget size="xl" />
       </div>
     </Router>
   )

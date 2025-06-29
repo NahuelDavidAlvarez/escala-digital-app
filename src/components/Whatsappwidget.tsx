@@ -5,7 +5,7 @@ type WhatsappWidgetProps = {
   size?: 'sm' | 'md' | 'lg' | 'xl'
 }
 
-export function Whatsappwidget({ size = 'md' }: WhatsappWidgetProps) {
+export function WhatsAppWidget({ size = 'md' }: WhatsappWidgetProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const [isMounted, setIsMounted] = useState(false)
