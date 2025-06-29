@@ -1,11 +1,45 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-export function Whatsappwidget() {
+type WhatsappWidgetProps = {
+  size?: 'sm' | 'md' | 'lg' | 'xl'
+}
+
+export function Whatsappwidget({ size = 'md' }: WhatsappWidgetProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
 
   const phoneNumber = '5491166629173' // Tu número con código de país Argentina
+
+  // Configuración de tamaños
+  const sizeConfig = {
+    sm: {
+      button: 'w-12 h-12',
+      icon: 'w-5 h-5',
+      closeIcon: 'w-4 h-4',
+      pulseIcon: 'w-6 h-6'
+    },
+    md: {
+      button: 'w-14 h-14',
+      icon: 'w-7 h-7',
+      closeIcon: 'w-5 h-5',
+      pulseIcon: 'w-6 h-6'
+    },
+    lg: {
+      button: 'w-16 h-16',
+      icon: 'w-8 h-8',
+      closeIcon: 'w-6 h-6',
+      pulseIcon: 'w-7 h-7'
+    },
+    xl: {
+      button: 'w-20 h-20',
+      icon: 'w-10 h-10',
+      closeIcon: 'w-7 h-7',
+      pulseIcon: 'w-8 h-8'
+    }
+  }
+
+  const currentSize = sizeConfig[size]
 
   // Mostrar el widget después de unos segundos
   useEffect(() => {
@@ -89,7 +123,7 @@ export function Whatsappwidget() {
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   <svg
-                    className="w-5 h-5"
+                    className={currentSize.closeIcon}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -151,7 +185,7 @@ export function Whatsappwidget() {
           onClick={() => setIsOpen(!isOpen)}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center relative"
+          className={`${currentSize.button} bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center relative`}
         >
           {/* Indicador de pulse */}
           <motion.div
@@ -168,7 +202,7 @@ export function Whatsappwidget() {
                 animate={{ rotate: 0, opacity: 1 }}
                 exit={{ rotate: 90, opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className="w-6 h-6 relative z-10"
+                className={`${currentSize.closeIcon} relative z-10`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -187,7 +221,7 @@ export function Whatsappwidget() {
                 animate={{ rotate: 0, opacity: 1 }}
                 exit={{ rotate: 90, opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className="w-7 h-7 relative z-10"
+                className={`${currentSize.icon} relative z-10`}
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >

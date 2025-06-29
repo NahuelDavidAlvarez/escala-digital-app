@@ -45,7 +45,7 @@ export default function App() {
         </Routes>
 
         {/* Widget de WhatsApp - se muestra en todas las páginas */}
-        <Whatsappwidget />
+        <Whatsappwidget size="xl" />
       </div>
     </Router>
   )
