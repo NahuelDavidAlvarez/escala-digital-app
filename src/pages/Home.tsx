@@ -228,7 +228,7 @@ export function Home() {
                 className="w-80 h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden shadow-2xl"
               >
                 <img
-                  src="/public/davidfundador.jpg"
+                  src="/davidfundador.jpg"
                   alt="David Nahuel Alvarez - Fundador de Escala Digital"
                   className="w-full h-full object-cover object-center"
                 />
