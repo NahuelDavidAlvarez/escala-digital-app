@@ -37,13 +37,13 @@ export function Home() {
       icon: '📈'
     },
     {
-      title: 'SEO & Analytics',
+      title: 'SEO & Analiticas',
       description:
         'Optimización para motores de búsqueda y análisis de datos para escalar tu negocio de manera inteligente.',
       icon: '🔍'
     },
     {
-      title: 'Branding',
+      title: 'Diseño',
       description:
         'Construimos identidades de marca sólidas que conectan emocionalmente con tu audiencia objetivo.',
       icon: '🎨'
