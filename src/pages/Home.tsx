@@ -58,7 +58,7 @@ export function Home() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
+        className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 scroll-mt-64"
       >
         {/* Animated Background */}
         <div className="absolute inset-0 opacity-20">
@@ -154,7 +154,7 @@ export function Home() {
       </section>
 
       {/* Services Section */}
-      <section ref={servicesRef} id="services" className="py-20 bg-white">
+      <section ref={servicesRef} id="services" className="py-20 bg-white scroll-mt-20">
         <div className="px-4 md:px-8 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -199,7 +199,7 @@ export function Home() {
       {/* About Section */}
       <section
         id="about"
-        className="py-20 bg-gradient-to-br from-gray-50 to-white"
+        className="py-20 bg-gradient-to-br from-gray-50 to-white scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           <motion.div

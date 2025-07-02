@@ -31,7 +31,7 @@ export function Contact() {
             Contacto
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-24 mt-12 text-primary/80 text-lg md:text-xl">
-            <div className="flex flex-col items-center md:items-start">
+            <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
               <h3 className="text-2xl font-semibold mb-4">Síguenos</h3>
               <div className="flex space-x-6">
                 <a href="#" className="hover:text-accent-light transition-colors duration-300">Facebook</a>
@@ -40,7 +40,7 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mb-8 md:mb-0">
               <div
                 onClick={handleCopyEmail}
                 className="mb-4 block text-primary hover:text-accent-light transition-colors duration-300 cursor-pointer relative"

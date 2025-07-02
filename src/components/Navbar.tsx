@@ -1,7 +1,8 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 
 export function Navbar() {
   const navRef = useRef<HTMLElement>(null)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -12,7 +13,12 @@ export function Navbar() {
         top: elementPosition - navbarHeight,
         behavior: 'smooth'
       })
+      setIsMobileMenuOpen(false) // Close mobile menu after clicking a link
     }
+  }
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
   return (
@@ -61,7 +67,7 @@ export function Navbar() {
 
         {/* Menú móvil (hamburguesa) */}
         <div className="md:hidden">
-          <button className="text-white hover:text-accent transition-colors">
+          <button onClick={toggleMobileMenu} className="text-white hover:text-accent transition-colors">
             <svg
               className="w-6 h-6"
               fill="none"
@@ -72,12 +78,42 @@ export function Navbar() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
+                d={isMobileMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
               />
             </svg>
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-[96px] left-0 w-full bg-primary shadow-lg py-4 flex flex-col items-center space-y-4 z-40">
+          <button
+            onClick={() => scrollToSection('hero')}
+            className="block w-full text-center py-2 hover:text-accent transition-colors duration-200 font-medium cursor-pointer"
+          >
+            Inicio
+          </button>
+          <button
+            onClick={() => scrollToSection('services')}
+            className="block w-full text-center py-2 hover:text-accent transition-colors duration-200 font-medium cursor-pointer"
+          >
+            Servicios
+          </button>
+          <button
+            onClick={() => scrollToSection('about')}
+            className="block w-full text-center py-2 hover:text-accent transition-colors duration-200 font-medium cursor-pointer"
+          >
+            Nosotros
+          </button>
+          <button
+            onClick={() => scrollToSection('contact')}
+            className="block w-full text-center py-2 hover:text-accent transition-colors duration-200 font-medium cursor-pointer"
+          >
+            Contacto
+          </button>
+        </div>
+      )}
     </nav>
   )
 }
