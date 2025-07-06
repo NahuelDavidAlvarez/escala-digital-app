@@ -30,11 +30,11 @@ export function Navbar() {
           className="flex items-center space-x-3 hover:text-accent transition-colors cursor-pointer"
         >
           <img
-            src="/EscalaDigital.png"
-            alt="Escala Digital Logo"
+            src="/RefuerzoDigital.png"
+            alt="Refuerzo Digital Logo"
             className="w-16 h-16 object-contain"
           />
-          <span className="text-xl font-bold">Escala Digital</span>
+          <span className="text-xl font-bold">Refuerzo Digital</span>
         </button>
 
         {/* Menú de navegación a la derecha */}

@@ -76,7 +76,7 @@ export function Contact() {
                 Tu visión, nuestra estrategia. Resultados que escalan.
               </p>
               <p className="text-primary/80 text-xs text-center md:text-right">
-                &copy; {new Date().getFullYear()} Escala Digital. Todos los derechos reservados.
+                &copy; {new Date().getFullYear()} Refuerzo Digital. Todos los derechos reservados.
               </p>
             </div>
           </div>
