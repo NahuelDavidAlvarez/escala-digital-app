@@ -88,7 +88,9 @@ export function Contact() {
                   <FaInstagram className="text-3xl" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/nahuel-david-alvarez"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-accent transition-colors duration-300"
                 >
                   <FaLinkedinIn className="text-3xl" />

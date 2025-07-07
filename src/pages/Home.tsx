@@ -59,7 +59,7 @@ export function Home() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-base-200 to-primary scroll-mt-64"
+        className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-base-200 to-primary scroll-mt-48"
       >
         {/* Overlay for intermediate darkness */}
         <div className="absolute inset-0 bg-primary opacity-30"></div>
