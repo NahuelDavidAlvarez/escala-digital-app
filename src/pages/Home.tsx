@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef } from 'react'
 import { Contact } from '../components/Contact'
-import { FaLaptopCode, FaChartLine, FaChartBar, FaPaintBrush } from 'react-icons/fa'
+import {
+  FaLaptopCode,
+  FaChartLine,
+  FaChartBar,
+  FaPaintBrush
+} from 'react-icons/fa'
 
 export function Home() {
   const [isVisible, setIsVisible] = useState(false)
@@ -64,7 +69,6 @@ export function Home() {
         {/* Overlay for intermediate darkness */}
         <div className="absolute inset-0 bg-primary opacity-30"></div>
         {/* Animated Background */}
-        
 
         {/* Main Content */}
         <motion.div
@@ -235,9 +239,9 @@ export function Home() {
                 <h3 className="text-3xl font-bold text-primary mb-4">
                   David Nahuel Alvarez
                 </h3>
-                <p className="text-xl text-accent font-semibold mb-6">
+                {/*                <p className="text-xl text-accent font-semibold mb-6">
                   Fundador
-                </p>
+                </p> */}
               </div>
 
               <div className="space-y-4 text-secondary leading-relaxed">
