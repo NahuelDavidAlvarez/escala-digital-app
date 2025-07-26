@@ -41,7 +41,7 @@ export function Navbar() {
           className="flex items-center space-x-3 hover:text-accent transition-colors cursor-pointer"
         >
           <img
-            src="/RefuerzoDigital.png"
+            src="/LogoWhite.svg"
             alt="Refuerzo Digital Logo"
             className="w-14 h-14 object-contain"
           />

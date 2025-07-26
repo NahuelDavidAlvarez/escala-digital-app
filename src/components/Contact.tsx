@@ -11,7 +11,7 @@ import {
 export function Contact() {
   const contact = {
     email: 'davidnahuelalvarez@gmail.com',
-    phone: '1166629173',
+    phone: '+54 1166629173',
     address: 'Buenos Aires, Argentina'
   }
 
@@ -42,7 +42,7 @@ export function Contact() {
               <div className="flex flex-col space-y-4">
                 <div
                   onClick={handleCopyEmail}
-                  className="block text-base-100 hover:text-accent transition-colors duration-300 cursor-pointer relative"
+                  className="block text-base-100 hover:text-secondary transition-colors duration-300 cursor-pointer relative"
                 >
                   <div className="flex items-center justify-center md:justify-start">
                     <FaEnvelope className="text-primary mr-2" />{' '}
@@ -64,14 +64,14 @@ export function Contact() {
                 </div>
                 <a
                   href={`tel:${contact.phone}`}
-                  className="block text-base-100 hover:text-accent transition-colors duration-300"
+                  className="block text-base-100 hover:text-secondary transition-colors duration-300"
                 >
                   <div className="flex items-center justify-center md:justify-start">
                     <FaPhone className="text-primary mr-2" />{' '}
                     <span>{contact.phone}</span>
                   </div>
                 </a>
-                <p className="flex items-center justify-center md:justify-start">
+                <p className="flex items-center justify-center md:justify-start text-base-100 hover:text-secondary transition-colors duration-300">
                   <FaMapMarkerAlt className="text-primary mr-2" />{' '}
                   {contact.address}
                 </p>
@@ -79,11 +79,11 @@ export function Contact() {
             </div>
 
             <div className="flex flex-col items-center md:items-center">
-              <h3 className="text-2xl font-semibold mb-4">Redes Sociales</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-base-100">Redes Sociales</h3>
               <div className="flex space-x-6 text-base-100">
                 <a
                   href="#"
-                  className="hover:text-accent transition-colors duration-300"
+                  className="hover:text-secondary transition-colors duration-300"
                 >
                   <FaInstagram className="text-3xl" />
                 </a>
@@ -91,7 +91,7 @@ export function Contact() {
                   href="https://www.linkedin.com/in/nahuel-david-alvarez"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-accent transition-colors duration-300"
+                  className="hover:text-secondary transition-colors duration-300"
                 >
                   <FaLinkedinIn className="text-3xl" />
                 </a>

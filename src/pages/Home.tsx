@@ -113,10 +113,10 @@ export function Home() {
               }
               whileHover={{
                 scale: 1.05,
-                boxShadow: '0 20px 40px rgba(196, 159, 122, 0.3)'
+                boxShadow: '0 10px 25px rgba(54, 69, 79, 0.3)'
               }}
               whileTap={{ scale: 0.95 }}
-              className="bg-accent text-primary px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-primary text-base-100 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Hablemos
             </motion.button>
@@ -126,10 +126,10 @@ export function Home() {
               }
               whileHover={{
                 scale: 1.05,
-                boxShadow: '0 20px 40px rgba(196, 159, 122, 0.3)'
+                boxShadow: '0 10px 25px rgba(54, 69, 79, 0.3)'
               }}
               whileTap={{ scale: 0.95 }}
-              className="bg-accent text-primary px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-primary text-base-100 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Servicios
             </motion.button>
@@ -244,35 +244,26 @@ export function Home() {
                 </p> */}
               </div>
 
-              <div className="space-y-4 text-secondary leading-relaxed">
+              <div className="space-y-4 text-primary leading-relaxed">
                 <p>
-                  Durante más de diez años trabajé en empresas del mundo
-                  digital, financiero y del marketing, especialmente en bancos
-                  como BBVA y Supervielle. Esa experiencia me permitió
-                  comprender en profundidad los flujos de trabajo y la
-                  organización interna de grandes equipos. Con ese conocimiento,
-                  decidí emprender para aplicar todo lo aprendido en ofrecer
-                  soluciones prácticas y efectivas al mercado actual. Mi
-                  filosofía se basa en aumentar la presencia online de mis
-                  clientes y ayudarlos a alcanzar objetivos reales de
-                  crecimiento.
+                  Cuento con más de diez años de experiencia en el mundo
+                  digital, financiero y del marketing, incluyendo proyectos para
+                  bancos y grandes empresas. Eso me permitió entender cómo
+                  trabajan los equipos a gran escala y qué necesita realmente un
+                  negocio para crecer online.
                 </p>
                 <p>
-                  Hoy en día existen muchas herramientas y tecnologías para
-                  tener presencia en internet. Si bien soy desarrollador y tengo
-                  un perfil técnico, evito entrar en tecnicismos innecesarios.
-                  Lo importante es elegir la herramienta adecuada para cada
-                  objetivo. Cuento con un abanico de soluciones amplio y
-                  flexible, encontraremos la opción más conveniente para tu
-                  caso.
+                  Como desarrollador con enfoque estratégico, traduzco objetivos
+                  comerciales en soluciones digitales concretas. Evito
+                  tecnicismos innecesarios y me enfoco en lo que realmente
+                  importa: diseñar soluciones para que tu marca gane
+                  visibilidad, atraiga clientes y crezca.
                 </p>
                 <p>
-                  Mis servicios están pensados para profesionales, autónomos,
-                  comercios, empresas y emprendedores que quieren competir en el
-                  mercado digital actual. Ofrezco un acompañamiento constante,
-                  con estrategias adaptadas a cada rubro y a cada etapa del
-                  negocio, siempre con una mirada puesta en escalar y
-                  evolucionar.
+                  Acompaño a profesionales, emprendedores y empresas que buscan
+                  destacarse en el entorno digital. Ofrezco soluciones
+                  personalizadas, pensadas para cada etapa del negocio, con una
+                  visión clara: generar crecimiento real y sostenido.
                 </p>
               </div>
 
@@ -307,7 +298,7 @@ export function Home() {
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: 0.9 + index * 0.1 }}
-                      className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-primary text-base-100 rounded-full text-sm font-medium"
                     >
                       {skill}
                     </motion.span>

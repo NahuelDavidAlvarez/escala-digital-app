@@ -6,13 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#150E03',
-        'primary-focus': '#705843',
-        'secondary': '#70663A',
-        'accent': '#C49F7A',
-        'neutral': '#91806B',
-        'base-100': '#F1EAD8',
-        'base-200': '#CFC6B1',
+        primary: '#36454F',       // Gris Acero Oscuro
+        'primary-focus': '#5A6D7C',// Gris Acero Medio
+        secondary: '#8D99AE',     // Gris Plata
+        'base-100': '#EDF2F7',      // Aluminio Cepillado
+        'base-200': '#D8DEE4'       // Metal Pulido
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif']
