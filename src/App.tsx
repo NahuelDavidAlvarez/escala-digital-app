@@ -7,9 +7,9 @@ import { Navbar } from './components/Navbar';
 import NavbarEjemplo from './components/NavbarEjemplo';
 import { WhatsAppWidget } from './components/WhatsAppWidget';
 import './index.css';
-import EjemploEcommerce from './pages/EjemploEcommerce';
-import EjemploProfesionales from './pages/EjemploProfesionales';
-import EjemploInstitucional from './pages/EjemploInstitucional';
+import EjemploEcommerce from './pages/ejemploecommerce';
+import EjemploProfesionales from './pages/ejemploprofesionales';
+import EjemploInstitucional from './pages/ejemploinstitucional';
 
 // Define color themes for examples
 const themes = {
