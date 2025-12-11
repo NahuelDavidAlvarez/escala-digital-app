@@ -99,7 +99,7 @@ export function Home() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-xl md:text-2xl text-primary mb-8 leading-relaxed"
           >
-            Refuerzo tu presencia online con creatividad, innovación y acción
+            Refuerzamos tu presencia digital con soluciones innovadoras, creativas y profesionales.
           </motion.p>
 
           <motion.div
@@ -111,12 +111,8 @@ export function Home() {
               onClick={() =>
                 window.open('https://wa.me/5491166629173', '_blank')
               }
-              whileHover={{
-                scale: 1.05,
-                boxShadow: '0 10px 25px rgba(54, 69, 79, 0.3)'
-              }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary text-base-100 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-primary text-base-100 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 hover:shadow-[0_10px_25px_rgba(54,69,79,0.3)] transition-all duration-300"
             >
               Hablemos
             </motion.button>
@@ -124,12 +120,8 @@ export function Home() {
               onClick={() =>
                 servicesRef.current?.scrollIntoView({ behavior: 'smooth' })
               }
-              whileHover={{
-                scale: 1.05,
-                boxShadow: '0 10px 25px rgba(54, 69, 79, 0.3)'
-              }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary text-base-100 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-primary text-base-100 px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 hover:shadow-[0_10px_25px_rgba(54,69,79,0.3)] transition-all duration-300"
             >
               Servicios
             </motion.button>
