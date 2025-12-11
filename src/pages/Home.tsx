@@ -133,7 +133,7 @@ export function Home() {
       <section
         ref={servicesRef}
         id="services"
-        className="py-20 bg-base-100 scroll-mt-20"
+        className="py-32 bg-base-100 scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           <motion.div
@@ -178,7 +178,7 @@ export function Home() {
       {/* New About Section - Alva Soluciones */}
       <section
         id="about"
-        className="py-20 bg-gradient-to-br from-base-200 to-base-100 scroll-mt-20"
+        className="py-32 bg-gradient-to-br from-base-200 to-base-100 scroll-mt-20"
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           {/* Header - Alva Soluciones */}
@@ -187,7 +187,7 @@ export function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-20"
+            className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               Sobre Nosotros
@@ -265,7 +265,7 @@ export function Home() {
 
                 <div className="space-y-4 text-primary opacity-80 leading-relaxed font-sans">
                   <p>
-                    Con más de diez años de trayectoria en el sector digital y corporativo, incluyendo colaboraciones estratégicas en la industria bancaria, decidí fundar Alva Soluciones para ayudar a cerrar la brecha entre la complejidad tecnológica y el éxito empresarial.
+                    Con varios años de trayectoria en el sector digital y corporativo, incluyendo colaboraciones estratégicas en la industria bancaria, decidí fundar Alva Soluciones para ayudar a cerrar la brecha entre la complejidad tecnológica y el éxito empresarial.
                   </p>
                   <p>
                     "Entiendo que detrás de cada desarrollo hay un negocio que necesita resultados. Nuestra misión es ser el socio tecnológico que traduce esas necesidades en sistemas robustos y experiencias digitales memorables."
@@ -379,7 +379,7 @@ export function Home() {
 
           <div className="space-y-4 text-primary opacity-80 leading-relaxed font-sans">
             <p>
-              Con más de diez años de trayectoria en el sector digital y corporativo, incluyendo colaboraciones estratégicas en la industria bancaria y grandes empresas, David fundó Alva Soluciones para cerrar la brecha entre la complejidad tecnológica y el éxito empresarial.
+              Con varios años de trayectoria en el sector digital y corporativo, incluyendo colaboraciones estratégicas en la industria bancaria y grandes empresas, fundé Alva Soluciones para cerrar la brecha entre la complejidad tecnológica y el éxito empresarial.
             </p>
             <p>
               "Entendemos que detrás de cada desarrollo hay un negocio que necesita resultados. Nuestra misión es ser el socio tecnológico que traduce esa necesidad en sistemas robustos y experiencias digitales memorables."
