@@ -142,7 +142,7 @@ export function Home() {
         id="services"
         className="py-20 bg-base-100 scroll-mt-20"
       >
-        <div className="px-4 md:px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ export function Home() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <motion.div
                 key={index}
