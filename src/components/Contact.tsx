@@ -66,7 +66,7 @@ export function Contact() {
             >
               <div className="flex items-center justify-center">
                 <FaWhatsapp className="text-primary mr-2" />{' '}
-                <span className="capitalize">Telefono</span>
+                <span className="capitalize">WhatsApp</span>
               </div>
             </a>
             <p className="flex items-center justify-center text-base-100 hover:text-secondary transition-colors duration-300">

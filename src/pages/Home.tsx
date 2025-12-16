@@ -233,9 +233,10 @@ export function Home() {
           </div>
 
           {/* Founder Section */}
-          <div className="bg-base-100 rounded-3xl shadow-xl overflow-hidden">
+
+          {/*           <div className="bg-base-100 rounded-3xl shadow-xl overflow-hidden">
             <div className="grid lg:grid-cols-2 items-center">
-              {/* Image Column */}
+              
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -249,7 +250,7 @@ export function Home() {
                 />
               </motion.div>
 
-              {/* Text Column */}
+
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -271,15 +272,10 @@ export function Home() {
                     "Entiendo que detrás de cada desarrollo hay un negocio que necesita resultados. Nuestra misión es ser el socio tecnológico que traduce esas necesidades en sistemas robustos y experiencias digitales memorables."
                   </p>
                 </div>
-
-                {/*                 <div className="pt-4 flex flex-wrap gap-2">
-                  <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Full Stack Development</span>
-                  <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Tech Leadership</span>
-                  <span className="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-semibold">Digital Strategy</span>
-                </div> */}
               </motion.div>
             </div>
-          </div>
+          </div> */}
+
         </div>
       </section>
 
